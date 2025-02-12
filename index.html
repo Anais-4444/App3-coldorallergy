@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Anais Rivera
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -138,17 +138,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 </div>
 
+<!-- Results -->
 <div class="page" id="five">
-	<div class="w3-container w3-flat-carrot">
-		<h1>Results</h1>
-	</div>
+    <div class="w3-container w3-flat-carrot">
+        <h1>Results</h1>
+    </div>
 
-	<div id="content" class="w3-container">
-		<script>
-		var resultText = document.getElementById("results")
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent
-		</script>
-	</div>
+    <div id="content" class="w3-container">
+        <div id="results"></div>
+        <script>
+            // Call the calculateResults function when the page is displayed
+            window.onload = calculateResults;
+        </script>
+    </div>
+</div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
